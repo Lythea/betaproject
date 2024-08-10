@@ -10,55 +10,89 @@
 
 </head>
 <body>
+ 
   <div class="headermain">
     <div class="header">
       <table class="header1">
         <tr>
-          <th><img id="headerImage" class="header_image1" src="menu.png" alt="Menu Image"></th>
+          <th><img id="headerImage" class="header_image1" src="assets/menu.png" alt="Menu Image">          </th>
           <th><h3>About Us</h3></th>
+          <th><h3>Features</h3></th>
           <th><h3></h3></th>
-          <th><h3>Contact Us</h3></th>
+          <th><div class="contactus" (mouseenter)="showPopup()" (mouseleave)="hidePopup()">
+            <h3>Contact Us</h3>
+            <div class="popup-container" *ngIf="popupVisible">
+              <div class="popup-arrow"></div>
+              <table>
+                <tr>
+                  <th><a href="https://www.facebook.com/lytheaaa" target="_blank"><img src="assets/facebook.png"></a></th>
+                  <th ><a href="https://x.com/aybirsun" target="_blank"><img  style="margin-top:-19px;margin-left:-2px;" src="assets/twitter.png"></a></th>
+                  <th><a href="https://www.linkedin.com/in/ron-iverson-del-mundo-460761312/?trk=opento_sprofile_details" target="_blank"><img style="margin-top:-19px;margin-left:-2px;"  src="assets/linkedin.png"></a></th>
+                </tr>
+              </table>
+            </div>
+          </div>
+         </th>
           <th><h3>Sign Up</h3></th>
         </tr>
       </table>
+      
+      
+      
+      
+      
     </div>
   </div>
   <div class="body">
+    <div class="scrollable-container">
+    <img class="bg" src="assets/bg.jpg" alt="Menu Image">
     <table>
       <tr>
         <td>
           <div class="company">
             <h1>Beta Project</h1>
-            <img class="companylogo"src="CompanyLogo.png" alt="Menu Image">
+            <img class="companylogo"src="assets/CompanyLogo.png" alt="Menu Image">
+            <img class="companylogo1"src="assets/Company1.webp" alt="Menu Image">
+            <img class="companylogo2"src="assets/Company2.webp" alt="Menu Image">
+            <img class="companylogo3"src="assets/Company3.webp" alt="Menu Image">
           </div>
         </td>
-        <td class="scrollable-cell">
+        <td>
           <div class="company1">
             <h1>Welcome to BetaProject!</h1>
-            <p>At BetaProject, we’re excited to share our innovative journey with you. As a cutting-edge initiative in Computer Sciences, our mission is to push boundaries and redefine the way Technology is approached.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    At BetaProject, We are thrilled to have you join us on this exciting journey through the cutting edge of Computer Sciences. At BetaProject, our vision is to revolutionize the technological landscape by pushing the boundaries of innovation and redefining how we approach and solve complex problems.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    As a trailblazing initiative in the tech industry, we are committed to exploring new frontiers and harnessing advanced technologies to drive progress. Our mission is to challenge the status quo, anticipate future needs, and create solutions that not only address today’s challenges but also pave the way for a brighter, more connected tomorrow.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Join us as we embark on this transformative adventure. Together, we will push the limits of what’s possible, uncover new opportunities, and make a lasting impact on the world of technology. Welcome to BetaProject, where the future is being shaped today.</p>
             <br>
-            <h1>What is BetaProject?</h1>
-            <p>BetaProject is an experimental platform designed to  . We’re currently in the beta phase, which means we’re refining our solutions and gathering valuable feedback from our users. This stage is crucial as we aim to perfect our offerings and ensure that we meet and exceed your expectations.</p>
-            <br>
-            <h1>Why Participate?</h1>
-            <p>Be at the Forefront: Get exclusive access to the latest features and developments before they’re widely released.</p>
-            <p>Shape the Future: Your feedback will directly influence the final product. We value your insights and want to ensure our solution fits your needs perfectly.</p>
-            <p>Contribute to Innovation: Join a community of forward-thinkers and innovators who are excited about exploring new technologies and ideas.</p>
-            <br>
-            <h1>How It Works</h1>
-            <p>1. Sign Up: Join our beta program by clicking the SignUp button.</p>
-            <p>2. Explore: Dive into our platform and start using [describe main features or tools].</p>
-            <p>3. Provide Feedback: Share your thoughts, experiences, and suggestions through [feedback mechanisms, e.g., surveys, forums].</p>
-            <br>
-            <h1>Get Started</h1>
-            <p>Ready to be part of something groundbreaking? [Provide instructions or a call-to-action for getting started, e.g., “Click here to join the beta program” or “Visit our website to learn more”].</p>
-            <p>Thank you for being part of BetaProject. Together, we’ll make innovation happen!</p>
+            
           </div>
         </td>
-   
     </tr>
-    </table>
     
+    </table>
+    <div class="body1">
+      <img class="bg2" src="assets/bg2.jpg" alt="Menu Image">
+      <div class="body1container">
+     
+      <h1>What is BetaProject?</h1>
+      <p >BetaProject is an experimental platform designed to  . We’re currently in the beta phase, which means we’re refining our solutions and gathering valuable feedback from our users. This stage is crucial as we aim to perfect our offerings and ensure that we meet and exceed your expectations.</p>
+      <br>
+      <h1>Why Participate?</h1>
+      <p>Be at the Forefront: Get exclusive access to the latest features and developments before they’re widely released.</p>
+      <p>Shape the Future: Your feedback will directly influence the final product. We value your insights and want to ensure our solution fits your needs perfectly.</p>
+      <p>Contribute to Innovation: Join a community of forward-thinkers and innovators who are excited about exploring new technologies and ideas.</p>
+      <br>
+      <h1>How It Works</h1>
+      <p>1. Sign Up: Join our beta program by clicking the SignUp button.</p>
+      <p>2. Explore: Dive into our platform and start using [describe main features or tools].</p>
+      <p>3. Provide Feedback: Share your thoughts, experiences, and suggestions through [feedback mechanisms, e.g., surveys, forums].</p>
+      <br>
+      <h1>Get Started</h1>
+      <p>Ready to be part of something groundbreaking? [Provide instructions or a call-to-action for getting started, e.g., “Click here to join the beta program” or “Visit our website to learn more”].</p>
+      <p>Thank you for being part of BetaProject. Together, we’ll make innovation happen!</p>
+    </div>
+  </div>
+  </div>
   </div>
 </body>
 </html>
